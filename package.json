@@ -4,9 +4,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify && vite build",
-    "preview": "vite preview",
-    "watch:css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "build:css": "tailwindcss -i ./src/input.css -o ./src/style.css --minify",
+    "build": "npm run build:css && vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
