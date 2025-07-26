@@ -1,4 +1,2 @@
-import './style.css'
-import './input.css';
-
-console.log('Website Company Profile Active');
+import '../dist/output.css';
+import './style.css'; // opsional kalau kamu pakai
